@@ -1,0 +1,10 @@
+snippet express-router
+options head
+  module.exports = (app) => {
+    const router = require("express").Router();
+
+    ${1:TARGET}
+
+    return router;
+ };
+
