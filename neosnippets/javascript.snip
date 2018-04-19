@@ -8,3 +8,11 @@ options head
     return router;
   };
 
+snippet angular-controller
+options head
+  module.exports = (app) => {
+    app.controller("${TARGET}", [${2}, (${2}) => {
+        ${1:TARGET}
+    }]);
+  };
+
